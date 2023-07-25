@@ -1,5 +1,7 @@
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -14,14 +16,17 @@ body{
     font-size: 50px;
     font-weight: 900;
     color: #a3a3a3;
+    text-shadow: 2px 2px 5px black;
+    box-shadow: inset 0px -5px 3px -3px black;
 }
-ul{
+.header ul, .content ul{
     display: flex;
     padding: 0px;
     margin: 0px;
     list-style: none;
     font-size: medium;
 }
+
 .header li a{
     margin-left: 15px;
     margin-right: 5px;
@@ -34,7 +39,7 @@ ul{
 .content{
     background-image: url(images/chris-nolan-back2.jpg);
     background-size: cover;
-    width: 1351px;
+    /* height: 600px; */
     height: 600px;
     display: flex;
     align-items: center;
@@ -45,6 +50,7 @@ ul{
 }
 .content li{
     margin-top: 20px;
+    text-shadow: 1px 1px 20px white;
 }
 .content li a{
     color: white;
@@ -53,4 +59,139 @@ ul{
     font-size: xx-large;
 }
 
+/* About */
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    align-self: center;
+}
+.about p{
+    text-align: center;
+    margin-top: 80px;
+    font-size: larger;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.about h2{
+    display: flex;
+    margin-bottom: 80px;
+    align-self: flex-end;
+}
+
+.qoute{
+    display: flex;
+}
+.joseph-qoute{
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 700px;
+    margin-top: 10px;
+}
+.oq, .cq{
+    font-size: xx-large;
+    font-weight: 900;
+    margin: 0px;
+    height: 0.7em;
+}
+.oq{
+    align-self: flex-start;
+}
+.cq{
+    align-self: flex-end;
+}
+.author{
+    margin-top: 15px;
+    align-self: flex-end;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
 /* Movies */
+.movies{
+    background-color: #085b70;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: inset 0px 5px 3px -3px black;
+}
+.movies > h1{
+    font-size: 60px;
+    margin-bottom: 0px;
+    color: white;
+}
+.movie-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie-des{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 530px;
+    border: 3px solid black;
+    box-shadow: 3px 3px 5px black;
+    margin: 40px;
+    justify-content: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.movie-des h1{
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+}
+.movie-des p{
+    margin: 10px;
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+.movie-des a{
+    color: white;
+}
+
+/* Nominations */
+.nominations {
+    display: flex;
+    flex-direction: column;
+}
+#nominations-heading{
+    align-self: center;
+}
+
+
+/* awards */
+.awards {
+    display: flex;
+    flex-direction: column;
+    background-color: #a3a3a3;
+}
+#awards-heading{
+    align-self: center;
+}
+
+/* vision */
+.vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#vision_heading{
+    align-self: center;
+}
+
+/* footer */
+
+.footer{
+    background-color: #18252d;
+    color: #a3a3a3;
+    text-align: center;
+    font-size: xx-large;
+}
+
+
+
