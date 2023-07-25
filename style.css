@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+}
+
+
+/* Header decorations */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #18252d;
+    margin: 0px;
+    height: 65px;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 900;
+    color: #a3a3a3;
+}
+ul{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: medium;
+}
+.header li a{
+    margin-left: 15px;
+    margin-right: 5px;
+    color: #a3a3a3;
+    text-decoration: none;
+}
+
+
+/* Content page 1 decorations */
+.content{
+    background-image: url(images/chris-nolan-back2.jpg);
+    background-size: cover;
+    width: 1351px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.content ul{
+    flex-direction: column;
+    margin-left: 75px;
+}
+.content li{
+    margin-top: 20px;
+}
+.content li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Robotica" , sans-serif;
+    font-size: xx-large;
+}
+
+/* Movies */
